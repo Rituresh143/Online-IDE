@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code IDE</title>
+    <link rel="stylesheet" href="./public/index.css" />
+<style>
+    body{
+        background-color: rgb(90, 129, 129);
+    }
+</style>
+</head>
+<body>
+    <center>
+        <h1 style="color: beige;">Online IDE</h1>
+        <form id="myform" name="myform" method="post" action="compilecode">
+          <h3>Code</h3>
+          <textarea rows="13" cols="100" id="code" name="code"></textarea>
+          <br />
+          <h3>Input</h3>
+          <textarea rows="10" cols="100" id="input" name="input"></textarea>
+          <br />
+          Language :
+          <select name="lang">
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+          </select>
+          Compile With Input :
+          <input type="radio" name="inputRadio" id="inputRadio" value="true" />yes
+          <input type="radio" name="inputRadio" id="inputRadio" value="false" />No
+          <br />
+          <input type="submit" value="Run" name="submit" />
+      </center>
+</body>
+</html>
